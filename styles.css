@@ -1,0 +1,131 @@
+/* --------------global styles------------------- */
+.navbar-toggler {
+    border: none;
+}
+
+.form-control:focus,
+.navbar-toggler:focus,
+.btn-close:focus {
+    border-color: none;
+    box-shadow: none;
+}
+.navbar-brand{
+    color: rgb(19, 109, 243);
+    font-weight: 700;
+}
+.nav-item{
+    border-bottom: 2px solid rgb(19, 109, 243);
+    margin-left: .5rem;
+}
+.offcanvas{
+    background: rgb(160, 72, 231);
+}
+.indexBrand h1{
+    color: rgb(19, 109, 243);
+    font-weight: 700;
+    font-size: 3.1em;
+}
+.indexLink .nav-link:nth-child(1){
+    border-right: 3px solid rgb(19, 109, 243);
+}
+.indexBody{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.indexBody, .navbar{
+    background: rgb(247, 247, 247) !important;
+}
+.nav-item.indexLink{
+    border-bottom: none;
+    margin-left: 0;
+}
+.indexLink .nav-link{
+    padding: 0 0.8em;
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.intro h2{
+    font-weight: 700;
+    font-size: 2.8em;
+    color: rgb(114, 114, 114);
+}
+.indexFooter{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .indexBrand h1{
+        font-size: 2.7em;
+    }
+    .indexLink .nav-link{
+        padding: 0 0.6em;
+        font-weight: 500;
+    }
+    .intro h2{
+        font-weight: 700;
+        font-size: 2.6em;
+        color: rgb(114, 114, 114);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .indexBrand h1{
+        font-size: 2em;
+    }
+    .indexLink .nav-link{
+        padding: 0 0.6em;
+        font-weight: 500;
+    }
+    .indexLink .nav-link:nth-child(1){
+        border-right: 2px solid rgb(19, 109, 243);
+    }
+    .intro h2{
+        font-weight: 700;
+        font-size: 2.6em;
+        color: rgb(114, 114, 114);
+    }
+    .intro p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .indexBrand h1{
+        font-size: 1.8em;
+    }
+    .indexLink .nav-link{
+        padding: 0 0.5em;
+        font-weight: 400;
+    }
+    .intro h2{
+        font-weight: 700;
+        font-size: 2.2em;
+        color: rgb(114, 114, 114);
+    }
+    .intro p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .indexBrand h1{
+        font-size: 5em;
+    }
+    .indexLink .nav-link{
+        padding: 0 2em;
+        font-weight: 1000;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
