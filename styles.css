@@ -2,7 +2,8 @@
 .navbar-toggler {
     border: none;
 }
-.loader{
+
+.loader {
     top: 0;
     left: 0;
     width: 100vw;
@@ -12,81 +13,182 @@
     z-index: 100;
     display: flex;
 }
-.loader div{
+
+.loader div {
     font-size: 1.5rem;
 }
-.loader span{
+
+.loader span {
     font-size: ;
 }
+
 .form-control:focus,
 .navbar-toggler:focus,
 .btn-close:focus {
     border-color: none;
     box-shadow: none;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: rgb(19, 109, 243);
     font-weight: 700;
 }
-.nav-item{
+
+.nav-item {
     border-bottom: 2px solid rgb(19, 109, 243);
     margin-left: .5rem;
 }
-.offcanvas{
+
+.offcanvas {
     background: rgb(160, 72, 231);
 }
-.indexBrand h1{
+
+.indexBrand h1 {
     color: rgb(19, 109, 243);
     font-weight: 700;
     font-size: 3.1em;
 }
-.indexLink .nav-link:nth-child(1){
+
+.indexLink .nav-link:nth-child(1) {
     border-right: 3px solid rgb(19, 109, 243);
 }
-.indexBody{
+
+.indexBody {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.indexBody, .navbar{
+
+.indexBody,
+.navbar {
     background: rgb(247, 247, 247) !important;
 }
-.nav-item.indexLink{
+
+.nav-item.indexLink {
     border-bottom: none;
     margin-left: 0;
 }
-.indexLink .nav-link{
+
+.indexLink .nav-link {
     padding: 0 0.8em;
     font-weight: 600;
     color: rgb(136, 136, 136);
 }
-.intro{
+
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
-.intro h2{
+
+.intro h2 {
     font-weight: 700;
     font-size: 2.8em;
     color: rgb(114, 114, 114);
 }
-.indexFooter{
+
+.indexFooter {
     display: flex;
     justify-content: center;
     bottom: 0;
 }
 
+.section-alpha .uploads,
+.section-alpha .why {
+    background: rgb(240, 240, 240);
+    margin-top: 3rem;
+}
+
+.section-alpha .uploads h3 {
+    font-weight: 700;
+    color: rgb(134, 134, 134);
+    padding: 0.5rem 1rem;
+}
+
+.section-alpha .why h3 {
+    color: rgb(134, 134, 134);
+    padding: 0.5rem 1rem;
+}
+
+.section-alpha .why i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.section-alpha .why span {
+    font-size: 1.5rem;
+    color: rgb(132, 0, 146);
+}
+
+.section-alpha .why span:nth-child(2) {
+    color: rgb(5, 146, 0);
+}
+
+.section-alpha .why span:nth-child(3) {
+    color: rgb(0, 80, 146);
+}
+
+.section-alpha .why span:nth-child(4) {
+    color: rgb(146, 0, 0);
+}
+
+.section-alpha .why span:nth-child(5) {
+    color: rgb(0, 27, 146);
+}
+
+.section-alpha .uploads i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.section-alpha .uploads p {
+    margin: 0 !important;
+}
+
+.section-alpha .uploads a {
+    margin: 1rem 0;
+}
+
+.section-alpha .uploads img {
+    height: 3rem;
+    width: ;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.stats{
+    background: rgb(240, 240, 240);
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+.stats .counter {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.stats span{
+    color: rgb(112, 112, 112);
+}
+.stats span small{
+    color: rgb(187, 187, 187);
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px black;
+}
+
 @media screen and (max-width: 768px) {
-    .indexBrand h1{
+    .indexBrand h1 {
         font-size: 2.7em;
     }
-    .indexLink .nav-link{
+
+    .indexLink .nav-link {
         padding: 0 0.6em;
         font-weight: 500;
     }
-    .intro h2{
+
+    .intro h2 {
         font-weight: 700;
         font-size: 2.6em;
         color: rgb(114, 114, 114);
@@ -94,53 +196,60 @@
 }
 
 @media screen and (max-width: 425px) {
-    .indexBrand h1{
+    .indexBrand h1 {
         font-size: 2em;
     }
-    .indexLink .nav-link{
+
+    .indexLink .nav-link {
         padding: 0 0.6em;
         font-weight: 500;
     }
-    .indexLink .nav-link:nth-child(1){
+
+    .indexLink .nav-link:nth-child(1) {
         border-right: 2px solid rgb(19, 109, 243);
     }
-    .intro h2{
+
+    .intro h2 {
         font-weight: 700;
         font-size: 2.6em;
         color: rgb(114, 114, 114);
     }
-    .intro p{
+
+    .intro p {
         font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .indexBrand h1{
+    .indexBrand h1 {
         font-size: 1.8em;
     }
-    .indexLink .nav-link{
+
+    .indexLink .nav-link {
         padding: 0 0.5em;
         font-weight: 400;
     }
-    .intro h2{
+
+    .intro h2 {
         font-weight: 700;
         font-size: 2.2em;
         color: rgb(114, 114, 114);
     }
-    .intro p{
+
+    .intro p {
         font-size: 1.2rem;
     }
 }
+
 @media screen and (min-width: 1440px) {
-    .indexBrand h1{
+    .indexBrand h1 {
         font-size: 5em;
     }
-    .indexLink .nav-link{
+
+    .indexLink .nav-link {
         padding: 0 2em;
         font-weight: 1000;
     }
 }
 
-@media screen and (max-width: 320px) {
-
-}
+@media screen and (max-width: 320px) {}
