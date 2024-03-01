@@ -6,19 +6,17 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-                <h1 class="text-center">Vexy</h1>
-                <form>
-                    <label>Username: </label><input id="username"><br>
-                    <label>Passcode: </label><input id="password"><br>
-                    <button type="submit" class="btn btn-primary">
-                        Submit
-                    </button>
-                    
-                </form>
-            </div>
-        </div>
-    </div>
+            <h1>Vexy</h1>
+            <form method="POST">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username"><br>
+                
+                <label for="password">Passcode:</label>
+                <input type="password" class="form-control" id="password"><br>
+                
+                <button type="submit" class="btn btn-primary mt-3">
+                    Submit
+                </button>
+            </form>
 </body>
 </html>
