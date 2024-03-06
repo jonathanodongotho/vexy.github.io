@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 320px) {
     .hero{
-        height: auto;
+        height: ;
     }
     .intro .stats-container{
         margin-top: -4rem;
