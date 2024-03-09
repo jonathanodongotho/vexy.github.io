@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>vexy | login</title>
 </head>
-<body>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-primary text-white text-center">
-                    <h2>Vex In</h2>
-                </div>
-                <div class="card-body">
-                    <form method="POST" action="" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username:</label>
-                            <input type="text" id="username" name="username" class="form-control" required>
-                            <div class="invalid-feedback">
-                                Please enter your username.
-                            </div>
-                        </div>
-                            <select class="form-select">
-                                <option>Admin</option>
-                                <option>Contributor</option>
-                                <option>User</option>
-                            </select> 
+<body style="background: linear-gradient(to right,rgb(78, 152, 164),rgb(124, 203, 196));">
 
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
-                            <input type="password" id="password" name="password" class="form-control" required>
-                            <div class="invalid-feedback">
-                                Please enter your password.
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="text-center">
-                                <div class="row">
-                                    <button type="submit" class="btn btn-outline-primary">Log In</button>
-                                </div>
-                                Incase you have no account, Now you can <a href="#">sign in</a> for free.
-                                <div class="row">
-                                    <button type="submit" class="btn btn-outline-primary" title="Have no account yet!">Sign In</button>
-                                </div><br>
-                                <div class="row">
-                                    <a href="home.html" class="btn btn-outline-primary rounded-30">Explore</a>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto ">
+                <div class="card">
+                    <div class="card-header bg-white border-0 ">
+                        <h2>Vex In</h2>
+                    </div>
+                    <div class="card-body ">
+                        <form method="POST" action="" class="needs-validation" novalidate>
+                            <div class="py-3">
+                                <input type="text" id="username" name="username" placeholder="User Name"
+                                    class="form-control shadow" required>
+                                <div class="invalid-feedback">
+                                    Please enter your username.
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                            <div class="py-3">
+                                <input type="password" id="password" name="password" placeholder="Password"
+                                    class="form-control shadow " required>
+                                <div class="invalid-feedback">
+                                    Please enter your password.
+                                </div>
+                            </div>
+                            <div class="py-4 d-flex justify-content-between">
+                                <div class="d-inline-block ">
+                                    <input type="checkbox" id="password" name="password"
+                                        class="form-check-input shadow ">
+                                    <label for="" class="form-check-label ">Remember Me</label>
+                                </div>
+                                <div>
+                                    <a href="" class="text-danger ">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="py-3">
+                                <button type="submit" class="btn btn-primary w-100 ">Login</button>
+                            </div>
+                            <div class=" ">
+                                <div class="text-center ">Or With</div>
+                            </div>
+                            <div class="py-3 d-flex justify-content-center ">
+                                <a href="" class="btn btn-outline-secondary  w-100 "><i
+                                        class="fa-brands fa-google text-center " style=""></i> Login in with google</a>
+                            </div>
+                            <div class="py-3 d-flex justify-content-between ">
+                                <div>
+                                    <span class="me-2 ">Don't have an acount?</span>
+                                    <a href="">Sign Up</a>
+                                </div>
+                                <div>
+                                    <a href="" class="text-decoration-none text-secondary ">Go back Home</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Bootstrap JS Bundle (Popper included) -->
-<script src="bootstrap.bundle.js"></script>
+    <!-- Bootstrap JS Bundle (Popper included) -->
+    <script src="bootstrap.bundle.js"></script>
 </body>
+
 </html>
