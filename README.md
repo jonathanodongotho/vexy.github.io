@@ -26,6 +26,9 @@
 -index
 -login
 -sign up
--dashboard
+-dashboard(benfactor)
+-dashboard(contributor)
 -upload
+-paper preview
+
 
