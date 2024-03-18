@@ -22,6 +22,10 @@
     font-size: ;
 }
 
+.navbar{
+    background: linear-gradient(to right,rgb(78, 152, 164),rgb(124, 203, 196)) !important;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
 .form-control:focus,
 .navbar-toggler:focus,
 .btn-close:focus {
@@ -30,226 +34,167 @@
 }
 
 .navbar-brand {
-    color: rgb(19, 109, 243);
+    color: rgb(195, 195, 196);
     font-weight: 700;
+    font-size: 2.3rem;
 }
 
 .nav-item {
-    border-bottom: 2px solid rgb(19, 109, 243);
     margin-left: .5rem;
+    font-weight: 600;
 }
 
 .offcanvas {
     background: rgb(160, 72, 231);
 }
-
-.indexBrand h1 {
-    color: rgb(19, 109, 243);
-    font-weight: 700;
-    font-size: 3.1em;
+.hero{
+    background: linear-gradient(to right,rgb(78, 152, 164),rgb(124, 203, 196)) !important;
+    height: calc(100vh - 100px);
 }
-
-.indexLink .nav-link:nth-child(1) {
-    border-right: 3px solid rgb(19, 109, 243);
+.hero .hero-top{
+    height: 75%;
 }
-
-.indexBody {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.hero h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
 }
-
-.indexBody,
-.navbar {
-    background: rgb(247, 247, 247) !important;
-}
-
-.nav-item.indexLink {
-    border-bottom: none;
-    margin-left: 0;
-}
-
-.indexLink .nav-link {
-    padding: 0 0.8em;
-    font-weight: 600;
-    color: rgb(136, 136, 136);
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.intro h2 {
-    font-weight: 700;
-    font-size: 2.8em;
-    color: rgb(114, 114, 114);
-}
-
-.indexFooter {
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-}
-
-.section-alpha .uploads,
-.section-alpha .why {
-    background: rgb(240, 240, 240);
-    margin-top: 3rem;
-}
-
-.section-alpha .uploads h3 {
-    font-weight: 700;
-    color: rgb(134, 134, 134);
-    padding: 0.5rem 1rem;
-}
-
-.section-alpha .why h3 {
-    color: rgb(134, 134, 134);
-    padding: 0.5rem 1rem;
-}
-
-.section-alpha .why i {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-}
-
-.section-alpha .why span {
+.hero p{
     font-size: 1.5rem;
-    color: rgb(132, 0, 146);
+    color: rgb(80, 80, 80);
+    font-weight: 750;
 }
-
-.section-alpha .why span:nth-child(2) {
-    color: rgb(5, 146, 0);
+.hero form{
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 5rem;
 }
-
-.section-alpha .why span:nth-child(3) {
-    color: rgb(0, 80, 146);
+.hero form input{
+    border: none;
 }
-
-.section-alpha .why span:nth-child(4) {
-    color: rgb(146, 0, 0);
+.intro{
+    margin-bottom: 3rem;
 }
-
-.section-alpha .why span:nth-child(5) {
-    color: rgb(0, 27, 146);
-}
-
-.section-alpha .uploads i {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-}
-
-.section-alpha .uploads p {
-    margin: 0 !important;
-}
-
-.section-alpha .uploads a {
-    margin: 1rem 0;
-}
-
-.section-alpha .uploads img {
-    height: 3rem;
-    width: ;
-    border: 1px solid rgb(177, 177, 177);
-    border-radius: 50%;
-    margin-right: 0.5rem;
-}
-
-.stats{
-    background: rgb(240, 240, 240);
-    margin-top: 3rem;
-    padding: 1rem 0;
-}
-.stats .counter {
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-.stats span{
-    color: rgb(112, 112, 112);
-}
-.stats span small{
-    color: rgb(187, 187, 187);
-    font-size: 0.8rem;
-    font-weight: 700;
+.intro .stats-container{
+    background: white;
+    margin-top: -9rem;
+    padding: 1rem;
+    border-radius: 1rem;
     box-shadow: 1px 1px 5px black;
+    color: rgb(116, 116, 116);
+}
+.intro .stats-container img{
+    object-fit: contain;
+    max-width: 12rem;
+}
+.intro .stats-container .stats{
+    font-size: 1rem;
+} 
+
+.intro .uploads-container{
+    background: white;
+    margin-top: -22.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px black;
+    color: rgb(116, 116, 116);
+}
+.intro .uploads-container img{
+    max-width: 12rem;
+}
+.intro .uploads-container a img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.drops{
+    background: linear-gradient(to right,rgb(78, 152, 164),rgb(124, 203, 196)) !important;
+    padding: 3rem 0;
+}
+.drops ul{
+    list-style: none;
+}
+.drops ul li a{
+    padding: 0.5rem 1rem;
+    background: white;
+}
+.social img{
+    max-width: 12rem;
+}
+
+.social button{
+    border: 1px rgb(151, 151, 151) solid;
+}
+.social button a{
+    color: rgb(151, 151, 151);
 }
 
 @media screen and (max-width: 768px) {
-    .indexBrand h1 {
-        font-size: 2.7em;
-    }
-
-    .indexLink .nav-link {
-        padding: 0 0.6em;
-        font-weight: 500;
-    }
-
-    .intro h2 {
-        font-weight: 700;
-        font-size: 2.6em;
-        color: rgb(114, 114, 114);
+    .social .col .btn{
+        margin: 0.6rem;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .indexBrand h1 {
-        font-size: 2em;
-    }
+    .intro .uploads-container{
+        margin-top: 0;
+        width: 100%;
 
-    .indexLink .nav-link {
-        padding: 0 0.6em;
-        font-weight: 500;
     }
-
-    .indexLink .nav-link:nth-child(1) {
-        border-right: 2px solid rgb(19, 109, 243);
+    .hero form{
+        padding: 0.5rem;
     }
-
-    .intro h2 {
-        font-weight: 700;
-        font-size: 2.6em;
-        color: rgb(114, 114, 114);
+    .hero h1{
+        font-size: 3.5rem;
     }
-
-    .intro p {
-        font-size: 1.3rem;
+    .hero p{
+        font-size: 1.2rem;
+    }
+    .intro .stats-container{
+        margin-top: -6rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .drops ul{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .drops ul li{
+        margin: 1rem;
+    }
+    .social .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social .col .btn{
+        margin: 0.5rem;
+    }
+    .social .social-icons{
+        flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .indexBrand h1 {
-        font-size: 1.8em;
+    .hero{
+        height: ;
     }
-
-    .indexLink .nav-link {
-        padding: 0 0.5em;
-        font-weight: 400;
+    .intro .stats-container{
+        margin-top: -4rem;
+        margin-bottom: 1.5rem;
     }
-
-    .intro h2 {
-        font-weight: 700;
-        font-size: 2.2em;
-        color: rgb(114, 114, 114);
+    .hero h1{
+        font-size: 3.2rem;
     }
-
-    .intro p {
+    .hero p{
         font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .indexBrand h1 {
-        font-size: 5em;
-    }
-
-    .indexLink .nav-link {
-        padding: 0 2em;
-        font-weight: 1000;
-    }
+    
 }
 
 @media screen and (max-width: 320px) {}
